@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>Sarah’s Graduation 🎓</title>
+    <meta name="description" content="Congratulations, Sarah!" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Confetti Canvas -->
+    <canvas id="confetti" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <div class="brand">
+        <!-- Mortarboard (cap) SVG icon -->
+        <svg class="icon icon-cap" viewBox="0 0 64 64" aria-hidden="true">
+          <path
+            d="M32 6L2 20l30 14 30-14L32 6zm0 18L8.6 20 32 10.9 55.4 20 32 24z"
+            fill="currentColor"
+          />
+          <path
+            d="M50 30.8v8.9c0 2.2-7.9 7.5-18 7.5s-18-5.3-18-7.5v-8.9l18 8.4 18-8.4z"
+            fill="currentColor"
+            opacity=".8"
+          />
+          <circle cx="55" cy="22" r="2.2" fill="currentColor" />
+          <path d="M55 24v9" stroke="currentColor" stroke-width="2" />
+          <circle cx="55" cy="35" r="2.8" fill="currentColor" />
+        </svg>
+        <h1 class="title">Congratulations, Sarah!</h1>
+      </div>
+    </header>
+
+    <!-- Hero section (use your own photo path below) -->
+    <!-- Place Sarah's photo at: assets/sarah.jpg (or update src) -->
+    <section class="hero" role="img" aria-label="Sarah on graduation day">
+      <img src="assets/sarah.jpg" alt="Sarah Martin" />
+      <div class="overlay"></div>
+      <div class="hero-badge">
+        <span class="year">Class of 2025</span>
+        <button id="flipCapBtn" class="btn-cap" aria-label="Flip the Cap">
+          <span class="btn-cap-inner">
+            <svg class="cap-emoji" viewBox="0 0 64 64" aria-hidden="true">
+              <path
+                d="M32 6L2 20l30 14 30-14L32 6z"
+                fill="currentColor"
+              />
+              <circle cx="54.5" cy="21.5" r="2.2" fill="currentColor" />
+              <path d="M54.5 24v10" stroke="currentColor" stroke-width="2" />
+            </svg>
+            <span class="btn-text">Flip the Cap</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <main class="content">
+      <div class="card">
+        <div class="icons">
+          <!-- Diploma icon -->
+          <svg class="icon icon-diploma" viewBox="0 0 64 64" aria-hidden="true">
+            <path
+              d="M10 40c-2.2 0-4-1.8-4-4V22c0-2.2 1.8-4 4-4h24c2.2 0 4 1.8 4 4v14c0 2.2-1.8 4-4 4H10z"
+              fill="currentColor"
+              opacity=".15"
+            />
+            <path
+              d="M8 22h28v8H8zM8 32h18"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+            />
+            <path
+              d="M42 33l10 10 4-4-10-10z"
+              fill="currentColor"
+            />
+            <circle cx="56" cy="43" r="3" fill="currentColor" />
+          </svg>
+          <svg class="icon icon-cap-small" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M32 6L2 20l30 14 30-14L32 6z" fill="currentColor" />
+          </svg>
+        </div>
+
+        <h2 class="headline">You Did It! 🎉</h2>
+
+        <p class="message">
+          Congratulations, Sarah! 🎓 I’m excited to see what amazing things
+          you’ll accomplish next. Wishing you success and happiness in all
+          that’s ahead!
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#"
+            onclick="confettiBurst(); return false;"
+            >Celebrate Again</a
+          >
+          <a class="btn btn-ghost" href="#top">Back to top</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Made with 💛 for <strong>Sarah Martin</strong>. Deployed on GitHub Pages.
+      </p>
+    </footer>
+
+    <!-- Decorative sparkles (screen readers skip) -->
+    <div class="sparkles" aria-hidden="true">
+      <span>✦</span><span>✺</span><span>✶</span><span>✷</span>
+    </div>
+  </body>
+</html>
